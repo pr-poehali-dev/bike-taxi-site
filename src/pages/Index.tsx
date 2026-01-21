@@ -25,13 +25,13 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="hero" className="relative overflow-hidden pt-20">
+      <section id="hero" className="relative overflow-hidden">
         <div 
           className="w-full h-screen"
           style={{
             backgroundImage: `url('https://cdn.poehali.dev/projects/e11fdb48-54cd-495f-947f-1c1b265cdddf/files/3f765207-add0-4fa5-b7b4-0985bfec9842.jpg')`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'center top',
             backgroundAttachment: 'fixed'
           }}
         />
