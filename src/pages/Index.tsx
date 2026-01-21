@@ -25,17 +25,18 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section id="hero" className="relative min-h-screen flex items-end overflow-hidden pt-20">
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `linear-gradient(rgba(26, 31, 44, 0.7), rgba(26, 31, 44, 0.85)), url('https://cdn.poehali.dev/projects/e11fdb48-54cd-495f-947f-1c1b265cdddf/files/3f765207-add0-4fa5-b7b4-0985bfec9842.jpg')`,
+            backgroundImage: `url('https://cdn.poehali.dev/projects/e11fdb48-54cd-495f-947f-1c1b265cdddf/files/3f765207-add0-4fa5-b7b4-0985bfec9842.jpg')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
           }}
         />
-        <div className="container mx-auto px-4 z-10 text-center animate-fade-in">
+        <div className="absolute inset-0 z-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="container mx-auto px-4 z-10 text-center pb-20 animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white drop-shadow-2xl">
             ДРАЙВ<br />
             <span className="text-primary">БЕЗ ГРАНИЦ</span>
