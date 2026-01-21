@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background snap-y snap-mandatory overflow-y-scroll h-screen">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="text-2xl font-bold text-primary flex items-center gap-2">
@@ -25,19 +25,19 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="hero" className="relative overflow-hidden">
+      <section id="hero" className="relative overflow-hidden h-screen snap-start">
         <div 
-          className="w-full h-screen"
+          className="w-full h-full"
           style={{
             backgroundImage: `url('https://cdn.poehali.dev/projects/e11fdb48-54cd-495f-947f-1c1b265cdddf/files/3f765207-add0-4fa5-b7b4-0985bfec9842.jpg')`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center top',
+            backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
           }}
         />
       </section>
 
-      <section className="relative bg-background py-20">
+      <section className="relative bg-background py-20 snap-start">
         <div className="container mx-auto px-4 text-center animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground">
             ДРАЙВ<br />
