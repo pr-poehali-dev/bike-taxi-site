@@ -25,9 +25,9 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="hero" className="relative min-h-screen flex items-end overflow-hidden pt-20">
+      <section id="hero" className="relative overflow-hidden pt-20">
         <div 
-          className="absolute inset-0 z-0"
+          className="w-full h-screen"
           style={{
             backgroundImage: `url('https://cdn.poehali.dev/projects/e11fdb48-54cd-495f-947f-1c1b265cdddf/files/3f765207-add0-4fa5-b7b4-0985bfec9842.jpg')`,
             backgroundSize: 'cover',
@@ -35,13 +35,15 @@ const Index = () => {
             backgroundAttachment: 'fixed'
           }}
         />
-        <div className="absolute inset-0 z-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-        <div className="container mx-auto px-4 z-10 text-center pb-20 animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white drop-shadow-2xl">
+      </section>
+
+      <section className="relative bg-background py-20">
+        <div className="container mx-auto px-4 text-center animate-fade-in">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground">
             ДРАЙВ<br />
             <span className="text-primary">БЕЗ ГРАНИЦ</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Мотоциклетное такси — свобода передвижения по городу на максимальной скорости
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
@@ -49,7 +51,7 @@ const Index = () => {
               <Icon name="Zap" className="mr-2" size={24} />
               Заказать поездку
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-6">
               Узнать больше
             </Button>
           </div>
